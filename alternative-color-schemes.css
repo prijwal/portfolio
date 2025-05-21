@@ -1,0 +1,256 @@
+/* 
+ALTERNATIVE COLOR SCHEMES
+Copy and paste these into globals.css to change the color scheme
+*/
+
+/* 1. FOREST GREEN WITH CREAM */
+:root {
+  --background: 40 33% 98%;
+  --foreground: 140 30% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 140 30% 15%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 140 30% 15%;
+
+  --primary: 140 30% 40%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 40 30% 96%;
+  --secondary-foreground: 140 30% 15%;
+
+  --muted: 40 30% 96%;
+  --muted-foreground: 140 20% 40%;
+
+  --accent: 120 30% 50%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 40 30% 90%;
+  --input: 40 30% 90%;
+  --ring: 140 30% 40%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 140 30% 15%;
+  --foreground: 40 30% 98%;
+
+  --card: 140 30% 17%;
+  --card-foreground: 40 30% 98%;
+
+  --popover: 140 30% 17%;
+  --popover-foreground: 40 30% 98%;
+
+  --primary: 140 30% 50%;
+  --primary-foreground: 140 30% 15%;
+
+  --secondary: 140 20% 20%;
+  --secondary-foreground: 40 30% 98%;
+
+  --muted: 140 20% 20%;
+  --muted-foreground: 40 20% 70%;
+
+  --accent: 120 30% 60%;
+  --accent-foreground: 140 30% 15%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 140 20% 25%;
+  --input: 140 20% 25%;
+  --ring: 140 30% 50%;
+}
+
+/* 2. SLATE GRAY WITH EMERALD */
+:root {
+  --background: 210 33% 98%;
+  --foreground: 210 40% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 210 40% 15%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 40% 15%;
+
+  --primary: 160 84% 39%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 210 40% 15%;
+
+  --muted: 210 40% 96%;
+  --muted-foreground: 210 30% 40%;
+
+  --accent: 160 60% 30%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 210 40% 90%;
+  --input: 210 40% 90%;
+  --ring: 160 84% 39%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 210 40% 15%;
+  --foreground: 210 40% 98%;
+
+  --card: 210 40% 17%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 210 40% 17%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 160 84% 39%;
+  --primary-foreground: 210 40% 15%;
+
+  --secondary: 210 30% 20%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 210 30% 20%;
+  --muted-foreground: 210 20% 70%;
+
+  --accent: 160 60% 30%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 210 30% 25%;
+  --input: 210 30% 25%;
+  --ring: 160 84% 39%;
+}
+
+/* 3. DARK PURPLE WITH SILVER */
+:root {
+  --background: 250 33% 98%;
+  --foreground: 270 40% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 270 40% 15%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 270 40% 15%;
+
+  --primary: 270 50% 40%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 250 30% 96%;
+  --secondary-foreground: 270 40% 15%;
+
+  --muted: 250 30% 96%;
+  --muted-foreground: 270 20% 40%;
+
+  --accent: 220 30% 70%;
+  --accent-foreground: 270 40% 15%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 250 30% 90%;
+  --input: 250 30% 90%;
+  --ring: 270 50% 40%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 270 40% 15%;
+  --foreground: 250 30% 98%;
+
+  --card: 270 40% 17%;
+  --card-foreground: 250 30% 98%;
+
+  --popover: 270 40% 17%;
+  --popover-foreground: 250 30% 98%;
+
+  --primary: 270 50% 50%;
+  --primary-foreground: 270 40% 15%;
+
+  --secondary: 270 30% 20%;
+  --secondary-foreground: 250 30% 98%;
+
+  --muted: 270 30% 20%;
+  --muted-foreground: 250 20% 70%;
+
+  --accent: 220 30% 70%;
+  --accent-foreground: 270 40% 15%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 270 30% 25%;
+  --input: 270 30% 25%;
+  --ring: 270 50% 50%;
+}
+
+/* 4. MONOCHROMATIC GRAY WITH RED ACCENTS */
+:root {
+  --background: 0 0% 98%;
+  --foreground: 0 0% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 15%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 15%;
+
+  --primary: 0 80% 50%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 0 0% 15%;
+
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 40%;
+
+  --accent: 0 60% 40%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 0 80% 50%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 0 0% 15%;
+  --foreground: 0 0% 98%;
+
+  --card: 0 0% 17%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 0 0% 17%;
+  --popover-foreground: 0 0% 98%;
+
+  --primary: 0 80% 50%;
+  --primary-foreground: 0 0% 15%;
+
+  --secondary: 0 0% 20%;
+  --secondary-foreground: 0 0% 98%;
+
+  --muted: 0 0% 20%;
+  --muted-foreground: 0 0% 70%;
+
+  --accent: 0 60% 40%;
+  --accent-foreground: 0 0% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 0 0% 25%;
+  --input: 0 0% 25%;
+  --ring: 0 80% 50%;
+}
