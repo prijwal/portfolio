@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { SocialLinks } from "@/components/social-links"
 import { Section } from "@/components/ui/section"
@@ -29,14 +28,14 @@ export default function Home() {
             <FadeIn delay={0.2}>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button
-                  asChild
+                  href="/contact"
                   size="lg"
                   className="bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity"
                 >
-                  <Link href="/contact">Get in Touch</Link>
+                  Get in Touch
                 </Button>
-                <Button variant="outline" asChild size="lg" className="elegant-border">
-                  <Link href="/projects">View Projects</Link>
+                <Button variant="outline" href="/projects" size="lg" className="elegant-border">
+                  View Projects
                 </Button>
               </div>
             </FadeIn>
@@ -81,11 +80,11 @@ export default function Home() {
         </StaggerContainer>
         <ScrollReveal>
           <div className="flex justify-center mt-10">
-            <Button variant="outline" asChild className="group elegant-border">
-              <Link href="/experience" className="flex items-center gap-2">
+            <Button variant="outline" href="/experience" className="group elegant-border">
+              <span className="flex items-center gap-2">
                 View All Experience
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </span>
             </Button>
           </div>
         </ScrollReveal>
@@ -121,11 +120,11 @@ export default function Home() {
         </StaggerContainer>
         <ScrollReveal>
           <div className="flex justify-center mt-10">
-            <Button variant="outline" asChild className="group elegant-border">
-              <Link href="/projects" className="flex items-center gap-2">
+            <Button variant="outline" href="/projects" className="group elegant-border">
+              <span className="flex items-center gap-2">
                 View All Projects
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </span>
             </Button>
           </div>
         </ScrollReveal>
@@ -181,11 +180,11 @@ export default function Home() {
         </StaggerContainer>
         <ScrollReveal>
           <div className="flex justify-center mt-10">
-            <Button variant="outline" asChild className="group elegant-border">
-              <Link href="/skills" className="flex items-center gap-2">
+            <Button variant="outline" href="/skills" className="group elegant-border">
+              <span className="flex items-center gap-2">
                 View All Skills
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </span>
             </Button>
           </div>
         </ScrollReveal>
@@ -200,8 +199,8 @@ export default function Home() {
             <p className="text-lg mb-8 max-w-2xl mx-auto text-white/90">
               I'm currently available for freelance projects, consulting work, and full-time positions.
             </p>
-            <Button size="lg" variant="secondary" asChild className="bg-white text-primary hover:bg-white/90">
-              <Link href="/contact">Get in Touch</Link>
+            <Button href="/contact" size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
+              Get in Touch
             </Button>
           </ScrollReveal>
         </div>

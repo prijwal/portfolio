@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -9,7 +8,12 @@ import { Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 
-const navItems = [
+type NavItem = {
+  name: string
+  path: string
+}
+
+const navItems: NavItem[] = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Experience", path: "/experience" },
@@ -40,7 +44,7 @@ export default function Navbar() {
       )}
     >
       <div className="container-custom flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
+        <a href="/" className="flex items-center space-x-2">
           <motion.span
             className="text-xl font-bold gradient-heading"
             initial={{ opacity: 0, x: -20 }}
@@ -49,7 +53,7 @@ export default function Navbar() {
           >
             Prijwal
           </motion.span>
-        </Link>
+        </a>
 
         <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item, index) => (
@@ -59,7 +63,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
             >
-              <Link
+              <a
                 href={item.path}
                 className={cn(
                   "relative text-sm font-medium transition-colors hover:text-primary",
@@ -74,7 +78,7 @@ export default function Navbar() {
                     transition={{ type: "spring", stiffness: 350, damping: 30 }}
                   />
                 )}
-              </Link>
+              </a>
             </motion.div>
           ))}
         </nav>
@@ -105,7 +109,7 @@ export default function Navbar() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
               >
-                <Link
+                <a
                   href={item.path}
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-primary py-2 block",
@@ -114,7 +118,7 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
-                </Link>
+                </a>
               </motion.div>
             ))}
           </div>

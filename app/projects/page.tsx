@@ -1,9 +1,8 @@
 import { Section } from "@/components/ui/section"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { projects } from "@/lib/data"
 import { ExternalLink } from "lucide-react"
-import Link from "next/link"
 import { StaggerContainer } from "@/components/animations/stagger-container"
 import { StaggerItem } from "@/components/animations/stagger-item"
 
@@ -30,19 +29,18 @@ export default function ProjectsPage() {
                     </div>
                   </div>
 
-                  <div>
+                  <div className="mb-6">
                     <h4 className="text-sm font-semibold mb-2">Impact:</h4>
                     <p className="text-sm">{project.impact}</p>
                   </div>
-                </CardContent>
-                <CardFooter className="px-6 pb-6 pt-0">
-                  <Button variant="outline" asChild className="w-full group elegant-border">
-                    <Link href={project.link} className="flex items-center justify-center gap-2">
+
+                  <Button variant="outline" href={project.link} className="w-full group elegant-border">
+                    <span className="flex items-center justify-center gap-2">
                       View Project
                       <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Link>
+                    </span>
                   </Button>
-                </CardFooter>
+                </CardContent>
               </Card>
             </StaggerItem>
           ))}

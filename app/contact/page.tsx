@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { SocialLinks } from "@/components/social-links"
 import { Mail, MapPin, Phone } from "lucide-react"
-import Link from "next/link"
 import { FadeIn } from "@/components/animations/fade-in"
 
 export default function ContactPage() {
@@ -50,11 +49,11 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-2xl font-bold mb-6 gradient-heading">Send a Message</h3>
                   <Button
+                    href="mailto:prijwal@example.com"
                     size="lg"
                     className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity"
-                    asChild
                   >
-                    <Link href="mailto:prijwal@example.com">Send Email</Link>
+                    Send Email
                   </Button>
 
                   <div className="mt-8 p-6 bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg">

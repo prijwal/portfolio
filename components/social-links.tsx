@@ -1,12 +1,19 @@
 "use client"
 
-import Link from "next/link"
+import type React from "react"
+
 import { Github, Linkedin, ExternalLink, Code2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
+type SocialLink = {
+  icon: React.ReactNode
+  href: string
+  label: string
+}
+
 export function SocialLinks() {
-  const socialLinks = [
+  const socialLinks: SocialLink[] = [
     { icon: <Github className="h-4 w-4" />, href: "https://github.com", label: "GitHub" },
     { icon: <Linkedin className="h-4 w-4" />, href: "https://linkedin.com", label: "LinkedIn" },
     { icon: <ExternalLink className="h-4 w-4" />, href: "https://leetcode.com", label: "LeetCode" },
@@ -26,13 +33,11 @@ export function SocialLinks() {
           <Button
             variant="outline"
             size="icon"
-            asChild
+            href={link.href}
             className="rounded-full border-primary/20 hover:border-primary hover:bg-primary/5 transition-colors"
           >
-            <Link href={link.href} target="_blank" rel="noopener noreferrer">
-              {link.icon}
-              <span className="sr-only">{link.label}</span>
-            </Link>
+            {link.icon}
+            <span className="sr-only">{link.label}</span>
           </Button>
         </motion.div>
       ))}

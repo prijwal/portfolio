@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { Github, Linkedin, ExternalLink, Code2 } from "lucide-react"
 import { ModeToggle } from "./mode-toggle"
 
@@ -15,7 +14,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link
+            <a
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -23,8 +22,8 @@ export default function Footer() {
             >
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
-            </Link>
-            <Link
+            </a>
+            <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -32,8 +31,8 @@ export default function Footer() {
             >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
-            </Link>
-            <Link
+            </a>
+            <a
               href="https://leetcode.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -41,8 +40,8 @@ export default function Footer() {
             >
               <ExternalLink className="h-5 w-5" />
               <span className="sr-only">LeetCode</span>
-            </Link>
-            <Link
+            </a>
+            <a
               href="https://geeksforgeeks.org"
               target="_blank"
               rel="noopener noreferrer"
@@ -50,7 +49,7 @@ export default function Footer() {
             >
               <Code2 className="h-5 w-5" />
               <span className="sr-only">GeeksforGeeks</span>
-            </Link>
+            </a>
             <div className="ml-2">
               <ModeToggle />
             </div>
